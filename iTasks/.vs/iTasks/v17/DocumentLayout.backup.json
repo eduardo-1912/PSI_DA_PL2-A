@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|c:\\users\\ducas\\onedrive - ipleiria\\da\\psi_da_pl2-a\\itasks\\view\\frmgereutilizadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:view\\frmgereutilizadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\view\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:view\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|c:\\users\\ducas\\onedrive - ipleiria\\da\\psi_da_pl2-a\\itasks\\view\\frmgeretipostarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:view\\frmgeretipostarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|c:\\users\\ducas\\onedrive - ipleiria\\da\\psi_da_pl2-a\\itasks\\view\\frmdetalhestarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:view\\frmdetalhestarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|c:\\users\\ducas\\onedrive - ipleiria\\da\\psi_da_pl2-a\\itasks\\view\\frmconsultartarefasconcluidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:view\\frmconsultartarefasconcluidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|c:\\users\\ducas\\onedrive - ipleiria\\da\\psi_da_pl2-a\\itasks\\view\\frmconsultatarefasemcurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:view\\frmconsultatarefasemcurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|c:\\users\\ducas\\onedrive - ipleiria\\da\\psi_da_pl2-a\\itasks\\model\\gestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:model\\gestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|c:\\users\\ducas\\onedrive - ipleiria\\da\\psi_da_pl2-a\\itasks\\model\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:model\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|c:\\users\\ducas\\onedrive - ipleiria\\da\\psi_da_pl2-a\\itasks\\view\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\view\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:view\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|c:\\users\\ducas\\onedrive - ipleiria\\da\\psi_da_pl2-a\\itasks\\view\\frmkanban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:view\\frmkanban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|c:\\users\\ducas\\onedrive - ipleiria\\da\\psi_da_pl2-a\\itasks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\model\\programador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:model\\programador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\model\\itaskscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:model\\itaskscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\model\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:model\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\model\\tipotarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:model\\tipotarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\model\\gestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:model\\gestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\model\\tarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40078359-763C-472D-9D7E-8C252267F6FC}|iTasks.csproj|solutionrelative:model\\tarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,113 +54,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Gestor.cs",
-              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Gestor.cs",
-              "RelativeDocumentMoniker": "Model\\Gestor.cs",
-              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Gestor.cs",
-              "RelativeToolTip": "Model\\Gestor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmLogin.cs",
+              "RelativeDocumentMoniker": "View\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmLogin.cs*",
+              "RelativeToolTip": "View\\frmLogin.cs*",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwFEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:57:59.851Z",
+              "WhenOpened": "2025-05-02T10:10:44.513Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Utilizador.cs",
-              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Utilizador.cs",
-              "RelativeDocumentMoniker": "Model\\Utilizador.cs",
-              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Utilizador.cs",
-              "RelativeToolTip": "Model\\Utilizador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:51:27.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmConsultarTarefasConcluidas.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmConsultarTarefasConcluidas.cs",
-              "RelativeDocumentMoniker": "View\\frmConsultarTarefasConcluidas.cs",
-              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmConsultarTarefasConcluidas.cs [Design]",
-              "RelativeToolTip": "View\\frmConsultarTarefasConcluidas.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:40:02.279Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmConsultaTarefasEmCurso.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmConsultaTarefasEmCurso.cs",
-              "RelativeDocumentMoniker": "View\\frmConsultaTarefasEmCurso.cs",
-              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmConsultaTarefasEmCurso.cs [Design]",
-              "RelativeToolTip": "View\\frmConsultaTarefasEmCurso.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:40:01.666Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmDetalhesTarefa.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmDetalhesTarefa.cs",
-              "RelativeDocumentMoniker": "View\\frmDetalhesTarefa.cs",
-              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmDetalhesTarefa.cs [Design]",
-              "RelativeToolTip": "View\\frmDetalhesTarefa.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:40:01.087Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmGereTiposTarefas.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmGereTiposTarefas.cs",
-              "RelativeDocumentMoniker": "View\\frmGereTiposTarefas.cs",
-              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmGereTiposTarefas.cs [Design]",
-              "RelativeToolTip": "View\\frmGereTiposTarefas.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:40:00.475Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmGereUtilizadores.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmGereUtilizadores.cs",
-              "RelativeDocumentMoniker": "View\\frmGereUtilizadores.cs",
-              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmGereUtilizadores.cs [Design]",
-              "RelativeToolTip": "View\\frmGereUtilizadores.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:39:59.58Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "frmLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmLogin.cs",
               "RelativeDocumentMoniker": "View\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmLogin.cs [Design]",
-              "RelativeToolTip": "View\\frmLogin.cs [Design]",
+              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmLogin.cs [Design]*",
+              "RelativeToolTip": "View\\frmLogin.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:39:56.967Z",
+              "WhenOpened": "2025-05-02T10:09:32.306Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "frmKanban.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmKanban.cs",
-              "RelativeDocumentMoniker": "View\\frmKanban.cs",
-              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\View\\frmKanban.cs [Design]",
-              "RelativeToolTip": "View\\frmKanban.cs [Design]",
+              "Title": "Tarefa.cs",
+              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Tarefa.cs",
+              "RelativeDocumentMoniker": "Model\\Tarefa.cs",
+              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Tarefa.cs",
+              "RelativeToolTip": "Model\\Tarefa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:39:58.848Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-02T09:37:49.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TipoTarefa.cs",
+              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\TipoTarefa.cs",
+              "RelativeDocumentMoniker": "Model\\TipoTarefa.cs",
+              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\TipoTarefa.cs",
+              "RelativeToolTip": "Model\\TipoTarefa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T09:37:47.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Utilizador.cs",
+              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Utilizador.cs",
+              "RelativeDocumentMoniker": "Model\\Utilizador.cs",
+              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Utilizador.cs",
+              "RelativeToolTip": "Model\\Utilizador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T09:37:22.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T09:25:21.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "iTasksContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\iTasksContext.cs",
+              "RelativeDocumentMoniker": "Model\\iTasksContext.cs",
+              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\iTasksContext.cs",
+              "RelativeToolTip": "Model\\iTasksContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T07:02:36.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Programador.cs",
+              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Programador.cs",
+              "RelativeDocumentMoniker": "Model\\Programador.cs",
+              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Programador.cs",
+              "RelativeToolTip": "Model\\Programador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T14:17:22.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Gestor.cs",
+              "DocumentMoniker": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Gestor.cs",
+              "RelativeDocumentMoniker": "Model\\Gestor.cs",
+              "ToolTip": "C:\\Users\\Ducas\\OneDrive - IPLeiria\\DA\\PSI_DA_PL2-A\\iTasks\\Model\\Gestor.cs",
+              "RelativeToolTip": "Model\\Gestor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T13:57:59.851Z",
+              "EditorCaption": ""
             }
           ]
         }

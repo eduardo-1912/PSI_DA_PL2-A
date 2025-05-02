@@ -1,6 +1,10 @@
-﻿using System;
+﻿using iTasks.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+
+//using System.Data.Entity;
+//using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,7 +20,44 @@ namespace iTasks
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // CRIA A BASE DE DADOS CASO NÃO EXISTA
+            using (var db = new iTasksContext())
+            {
+                db.Database.CreateIfNotExists();
+
+                if (!db.Gestores.Any())
+                {
+                    var gestor = new Gestor
+                    {
+                        Nome = "Gestor Teste",
+                        Username = "gestor_teste",
+                        Password = "123",
+                        Departamento = Departamento.IT,
+                        GereUtilizadores = true
+                    };
+
+                    var programador = new Programador
+                    {
+                        Nome = "Programador Teste",
+                        Username = "programador_teste",
+                        Password = "123",
+                        NivelExperiencia = NivelExperiencia.Senior,
+                        Gestor = gestor
+                    };
+
+                    db.Gestores.Add(gestor);
+                    db.Programadores.Add(programador);
+                    db.SaveChanges();
+                }
+            }
+
+            
             Application.Run(new frmLogin());
         }
+
+
+
     }
 }
+

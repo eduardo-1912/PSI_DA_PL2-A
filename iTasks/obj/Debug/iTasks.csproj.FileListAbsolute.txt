@@ -1,6 +1,10 @@
 C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\bin\Debug\iTasks.exe.config
 C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\bin\Debug\iTasks.exe
 C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\bin\Debug\iTasks.pdb
+C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\bin\Debug\EntityFramework.dll
+C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\bin\Debug\EntityFramework.xml
+C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\obj\Debug\iTasks.csproj.AssemblyReference.cache
 C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\obj\Debug\iTasks.frmConsultarTarefasConcluidas.resources
 C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\obj\Debug\iTasks.frmConsultaTarefasEmCurso.resources
@@ -12,5 +16,6 @@ C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\obj\Debug\iTasks.frmLo
 C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\obj\Debug\iTasks.Properties.Resources.resources
 C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\obj\Debug\iTasks.csproj.GenerateResource.cache
 C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\obj\Debug\iTasks.csproj.CoreCompileInputs.cache
+C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\obj\Debug\iTasks.csproj.Up2Date
 C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\obj\Debug\iTasks.exe
 C:\Users\Ducas\OneDrive - IPLeiria\DA\PSI_DA_PL2-A\iTasks\obj\Debug\iTasks.pdb
