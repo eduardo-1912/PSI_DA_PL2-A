@@ -10,5 +10,13 @@ namespace iTasks.Model
     {
         public Departamento Departamento { get; set; }
         public bool GereUtilizadores { get; set; }
+
+
+        public override string ToString()
+        {
+            return $"{Nome} ({Username}) | {Departamento}";
+        }
+
+
     }
 }

@@ -36,14 +36,18 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lstListaGestores = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btLimparSelecaoGestores = new System.Windows.Forms.Button();
+            this.btEliminarGestor = new System.Windows.Forms.Button();
+            this.chkGereUtilizadores = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtPasswordGestor = new System.Windows.Forms.TextBox();
+            this.cbDepartamento = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtUsernameGestor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPasswordGestor = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbDepartamento = new System.Windows.Forms.ComboBox();
-            this.chkGereUtilizadores = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cbGestorProg = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btGravarProg = new System.Windows.Forms.Button();
             this.txtPasswordProg = new System.Windows.Forms.TextBox();
@@ -57,8 +61,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtNomeProg = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cbGestorProg = new System.Windows.Forms.ComboBox();
+            this.btLimparSelecaoProgramadores = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -71,8 +75,9 @@
             this.btGravarGestor.Name = "btGravarGestor";
             this.btGravarGestor.Size = new System.Drawing.Size(201, 23);
             this.btGravarGestor.TabIndex = 37;
-            this.btGravarGestor.Text = "Gravar Dados";
+            this.btGravarGestor.Text = "Criar Gestor";
             this.btGravarGestor.UseVisualStyleBackColor = true;
+            this.btGravarGestor.Click += new System.EventHandler(this.btGravarGestor_Click);
             // 
             // txtNomeGestor
             // 
@@ -112,7 +117,7 @@
             this.groupBox1.Controls.Add(this.lstListaGestores);
             this.groupBox1.Location = new System.Drawing.Point(6, 19);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(274, 455);
+            this.groupBox1.Size = new System.Drawing.Size(274, 426);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lista";
@@ -121,13 +126,17 @@
             // 
             this.lstListaGestores.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstListaGestores.FormattingEnabled = true;
+            this.lstListaGestores.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lstListaGestores.Location = new System.Drawing.Point(3, 16);
             this.lstListaGestores.Name = "lstListaGestores";
-            this.lstListaGestores.Size = new System.Drawing.Size(268, 436);
+            this.lstListaGestores.Size = new System.Drawing.Size(268, 407);
             this.lstListaGestores.TabIndex = 0;
+            this.lstListaGestores.SelectedIndexChanged += new System.EventHandler(this.lstListaGestores_SelectedIndexChanged);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btLimparSelecaoGestores);
+            this.groupBox2.Controls.Add(this.btEliminarGestor);
             this.groupBox2.Controls.Add(this.chkGereUtilizadores);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.btGravarGestor);
@@ -148,6 +157,71 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Gestores";
             // 
+            // btLimparSelecaoGestores
+            // 
+            this.btLimparSelecaoGestores.Location = new System.Drawing.Point(6, 448);
+            this.btLimparSelecaoGestores.Name = "btLimparSelecaoGestores";
+            this.btLimparSelecaoGestores.Size = new System.Drawing.Size(274, 23);
+            this.btLimparSelecaoGestores.TabIndex = 45;
+            this.btLimparSelecaoGestores.Text = "Limpar Seleção";
+            this.btLimparSelecaoGestores.UseVisualStyleBackColor = true;
+            this.btLimparSelecaoGestores.Click += new System.EventHandler(this.btLimparSelecaoGestores_Click);
+            // 
+            // btEliminarGestor
+            // 
+            this.btEliminarGestor.BackColor = System.Drawing.SystemColors.Control;
+            this.btEliminarGestor.Enabled = false;
+            this.btEliminarGestor.Location = new System.Drawing.Point(294, 312);
+            this.btEliminarGestor.Name = "btEliminarGestor";
+            this.btEliminarGestor.Size = new System.Drawing.Size(201, 23);
+            this.btEliminarGestor.TabIndex = 44;
+            this.btEliminarGestor.Text = "Eliminar Gestor";
+            this.btEliminarGestor.UseVisualStyleBackColor = false;
+            this.btEliminarGestor.Click += new System.EventHandler(this.btEliminarGestor_Click);
+            // 
+            // chkGereUtilizadores
+            // 
+            this.chkGereUtilizadores.AutoSize = true;
+            this.chkGereUtilizadores.Location = new System.Drawing.Point(294, 240);
+            this.chkGereUtilizadores.Name = "chkGereUtilizadores";
+            this.chkGereUtilizadores.Size = new System.Drawing.Size(106, 17);
+            this.chkGereUtilizadores.TabIndex = 43;
+            this.chkGereUtilizadores.Text = "Gere Utilizadores";
+            this.chkGereUtilizadores.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(291, 187);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 13);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "Departamento:";
+            // 
+            // txtPasswordGestor
+            // 
+            this.txtPasswordGestor.Location = new System.Drawing.Point(294, 159);
+            this.txtPasswordGestor.Name = "txtPasswordGestor";
+            this.txtPasswordGestor.Size = new System.Drawing.Size(201, 20);
+            this.txtPasswordGestor.TabIndex = 40;
+            // 
+            // cbDepartamento
+            // 
+            this.cbDepartamento.FormattingEnabled = true;
+            this.cbDepartamento.Location = new System.Drawing.Point(294, 203);
+            this.cbDepartamento.Name = "cbDepartamento";
+            this.cbDepartamento.Size = new System.Drawing.Size(201, 21);
+            this.cbDepartamento.TabIndex = 41;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(291, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Password:";
+            // 
             // txtUsernameGestor
             // 
             this.txtUsernameGestor.Location = new System.Drawing.Point(294, 119);
@@ -164,51 +238,10 @@
             this.label2.TabIndex = 37;
             this.label2.Text = "Username:";
             // 
-            // txtPasswordGestor
-            // 
-            this.txtPasswordGestor.Location = new System.Drawing.Point(294, 159);
-            this.txtPasswordGestor.Name = "txtPasswordGestor";
-            this.txtPasswordGestor.Size = new System.Drawing.Size(201, 20);
-            this.txtPasswordGestor.TabIndex = 40;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(291, 143);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "Password:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(291, 187);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 13);
-            this.label5.TabIndex = 42;
-            this.label5.Text = "Departamento:";
-            // 
-            // cbDepartamento
-            // 
-            this.cbDepartamento.FormattingEnabled = true;
-            this.cbDepartamento.Location = new System.Drawing.Point(294, 203);
-            this.cbDepartamento.Name = "cbDepartamento";
-            this.cbDepartamento.Size = new System.Drawing.Size(201, 21);
-            this.cbDepartamento.TabIndex = 41;
-            // 
-            // chkGereUtilizadores
-            // 
-            this.chkGereUtilizadores.AutoSize = true;
-            this.chkGereUtilizadores.Location = new System.Drawing.Point(294, 240);
-            this.chkGereUtilizadores.Name = "chkGereUtilizadores";
-            this.chkGereUtilizadores.Size = new System.Drawing.Size(106, 17);
-            this.chkGereUtilizadores.TabIndex = 43;
-            this.chkGereUtilizadores.Text = "Gere Utilizadores";
-            this.chkGereUtilizadores.UseVisualStyleBackColor = true;
-            // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.btLimparSelecaoProgramadores);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.cbGestorProg);
             this.groupBox3.Controls.Add(this.label6);
@@ -230,6 +263,23 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Programadores";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(291, 230);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.TabIndex = 44;
+            this.label11.Text = "Gestor:";
+            // 
+            // cbGestorProg
+            // 
+            this.cbGestorProg.FormattingEnabled = true;
+            this.cbGestorProg.Location = new System.Drawing.Point(294, 246);
+            this.cbGestorProg.Name = "cbGestorProg";
+            this.cbGestorProg.Size = new System.Drawing.Size(201, 21);
+            this.cbGestorProg.TabIndex = 43;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -245,7 +295,7 @@
             this.btGravarProg.Name = "btGravarProg";
             this.btGravarProg.Size = new System.Drawing.Size(201, 23);
             this.btGravarProg.TabIndex = 37;
-            this.btGravarProg.Text = "Gravar Dados";
+            this.btGravarProg.Text = "Criar Programador";
             this.btGravarProg.UseVisualStyleBackColor = true;
             // 
             // txtPasswordProg
@@ -293,7 +343,7 @@
             this.groupBox4.Controls.Add(this.lstListaProgramadores);
             this.groupBox4.Location = new System.Drawing.Point(6, 19);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(274, 455);
+            this.groupBox4.Size = new System.Drawing.Size(274, 426);
             this.groupBox4.TabIndex = 32;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Lista";
@@ -304,7 +354,7 @@
             this.lstListaProgramadores.FormattingEnabled = true;
             this.lstListaProgramadores.Location = new System.Drawing.Point(3, 16);
             this.lstListaProgramadores.Name = "lstListaProgramadores";
-            this.lstListaProgramadores.Size = new System.Drawing.Size(268, 436);
+            this.lstListaProgramadores.Size = new System.Drawing.Size(268, 407);
             this.lstListaProgramadores.TabIndex = 0;
             // 
             // txtIdProg
@@ -340,22 +390,25 @@
             this.label10.TabIndex = 35;
             this.label10.Text = "Nome:";
             // 
-            // label11
+            // btLimparSelecaoProgramadores
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(291, 230);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 13);
-            this.label11.TabIndex = 44;
-            this.label11.Text = "Gestor:";
+            this.btLimparSelecaoProgramadores.Location = new System.Drawing.Point(6, 448);
+            this.btLimparSelecaoProgramadores.Name = "btLimparSelecaoProgramadores";
+            this.btLimparSelecaoProgramadores.Size = new System.Drawing.Size(274, 23);
+            this.btLimparSelecaoProgramadores.TabIndex = 46;
+            this.btLimparSelecaoProgramadores.Text = "Limpar Seleção";
+            this.btLimparSelecaoProgramadores.UseVisualStyleBackColor = true;
             // 
-            // cbGestorProg
+            // button1
             // 
-            this.cbGestorProg.FormattingEnabled = true;
-            this.cbGestorProg.Location = new System.Drawing.Point(294, 246);
-            this.cbGestorProg.Name = "cbGestorProg";
-            this.cbGestorProg.Size = new System.Drawing.Size(201, 21);
-            this.cbGestorProg.TabIndex = 43;
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(294, 312);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(201, 23);
+            this.button1.TabIndex = 46;
+            this.button1.Text = "Eliminar Programador";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // frmGereUtilizadores
             // 
@@ -366,6 +419,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "frmGereUtilizadores";
             this.Text = "frmListaUtilizadores";
+            this.Load += new System.EventHandler(this.frmGereUtilizadores_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -409,5 +463,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cbGestorProg;
+        private System.Windows.Forms.Button btEliminarGestor;
+        private System.Windows.Forms.Button btLimparSelecaoGestores;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btLimparSelecaoProgramadores;
     }
 }

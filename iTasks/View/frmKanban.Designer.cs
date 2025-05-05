@@ -48,7 +48,7 @@
             this.btSetDone = new System.Windows.Forms.Button();
             this.btSetTodo = new System.Windows.Forms.Button();
             this.btNova = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNomeUtilizador = new System.Windows.Forms.Label();
             this.btPrevisao = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -139,12 +139,14 @@
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // exportarParaCSVToolStripMenuItem
             // 
             this.exportarParaCSVToolStripMenuItem.Name = "exportarParaCSVToolStripMenuItem";
             this.exportarParaCSVToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.exportarParaCSVToolStripMenuItem.Text = "Exportar Tarefas Concluídas para CSV";
+            this.exportarParaCSVToolStripMenuItem.Click += new System.EventHandler(this.exportarParaCSVToolStripMenuItem_Click);
             // 
             // utilizadoresToolStripMenuItem
             // 
@@ -160,12 +162,14 @@
             this.gerirUtilizadoresToolStripMenuItem.Name = "gerirUtilizadoresToolStripMenuItem";
             this.gerirUtilizadoresToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.gerirUtilizadoresToolStripMenuItem.Text = "Gerir Utilizadores";
+            this.gerirUtilizadoresToolStripMenuItem.Click += new System.EventHandler(this.gerirUtilizadoresToolStripMenuItem_Click);
             // 
             // gerirTiposDeTarefasToolStripMenuItem
             // 
             this.gerirTiposDeTarefasToolStripMenuItem.Name = "gerirTiposDeTarefasToolStripMenuItem";
             this.gerirTiposDeTarefasToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.gerirTiposDeTarefasToolStripMenuItem.Text = "Gerir Tipos de Tarefas";
+            this.gerirTiposDeTarefasToolStripMenuItem.Click += new System.EventHandler(this.gerirTiposDeTarefasToolStripMenuItem_Click);
             // 
             // listagensToolStripMenuItem
             // 
@@ -181,12 +185,14 @@
             this.tarefasTerminadasToolStripMenuItem.Name = "tarefasTerminadasToolStripMenuItem";
             this.tarefasTerminadasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tarefasTerminadasToolStripMenuItem.Text = "Tarefas Concluídas";
+            this.tarefasTerminadasToolStripMenuItem.Click += new System.EventHandler(this.tarefasTerminadasToolStripMenuItem_Click);
             // 
             // tarefasEmCursoToolStripMenuItem
             // 
             this.tarefasEmCursoToolStripMenuItem.Name = "tarefasEmCursoToolStripMenuItem";
             this.tarefasEmCursoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tarefasEmCursoToolStripMenuItem.Text = "Tarefas em Curso";
+            this.tarefasEmCursoToolStripMenuItem.Click += new System.EventHandler(this.tarefasEmCursoToolStripMenuItem_Click);
             // 
             // btSetDoing
             // 
@@ -224,14 +230,16 @@
             this.btNova.Text = "Nova Tarefa";
             this.btNova.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblNomeUtilizador
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(778, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Bem vindo: <Nome Utilizador>";
+            this.lblNomeUtilizador.AutoSize = true;
+            this.lblNomeUtilizador.Location = new System.Drawing.Point(765, 34);
+            this.lblNomeUtilizador.Name = "lblNomeUtilizador";
+            this.lblNomeUtilizador.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblNomeUtilizador.Size = new System.Drawing.Size(63, 13);
+            this.lblNomeUtilizador.TabIndex = 9;
+            this.lblNomeUtilizador.Text = "Bem vindo: ";
+            this.lblNomeUtilizador.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btPrevisao
             // 
@@ -248,7 +256,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(943, 537);
             this.Controls.Add(this.btPrevisao);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNomeUtilizador);
             this.Controls.Add(this.btNova);
             this.Controls.Add(this.btSetTodo);
             this.Controls.Add(this.btSetDone);
@@ -292,7 +300,7 @@
         private System.Windows.Forms.Button btSetDone;
         private System.Windows.Forms.Button btSetTodo;
         private System.Windows.Forms.Button btNova;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNomeUtilizador;
         private System.Windows.Forms.Button btPrevisao;
     }
 }

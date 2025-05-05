@@ -13,5 +13,12 @@ namespace iTasks.Model
         public int IdGestor { get; set; } // FOREIGN KEY -> Gestor -> Utilizador(Id)
         [ForeignKey("IdGestor")]
         public Gestor Gestor { get; set; } // PERMITE SABER O GESTOR (EX: programador.Gestor.Nome)
+
+
+        public override string ToString()
+        {
+            return $"{Nome} ({Username}) | {NivelExperiencia}";
+        }
+
     }
 }
