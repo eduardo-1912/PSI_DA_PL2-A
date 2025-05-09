@@ -1,4 +1,5 @@
 ﻿using iTasks.Model;
+using iTasks.Controller;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,24 +9,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace iTasks
 {
     public partial class frmGereUtilizadores : Form
     {
+
+
+
+
         public frmGereUtilizadores()
         {
             InitializeComponent();
+
+            // VerificarCamposGestor();
 
         }
 
         private void AtualizarListasGestor()
         {
-            using (var db = new iTasksContext())
-            {
-                lstListaGestores.Items.Clear();
-                lstListaGestores.Items.AddRange(db.Gestores.ToArray());
-            }
+            
+            lstListaGestores.Items.Clear();
+            lstListaGestores.Items.AddRange(GestorController.ShowAll().ToArray());
+            
         }
 
         private void LimparCamposGestor()
@@ -39,6 +46,8 @@ namespace iTasks
             btGravarGestor.Text = "Criar Gestor";
             lstListaGestores.SelectedIndex = -1;
         }
+
+
 
         private void AtualizarListasProgramador()
         {
@@ -61,10 +70,27 @@ namespace iTasks
 
         private void frmGereUtilizadores_Load(object sender, EventArgs e)
         {
+            // GESTOR
             AtualizarListasGestor();
 
             cbDepartamento.DataSource = Enum.GetValues(typeof(Departamento));
             cbDepartamento.SelectedIndex = -1;
+
+            // PROGRAMADOR
+            AtualizarListasProgramador();
+
+            cbNivelProg.DataSource = Enum.GetValues(typeof(NivelExperiencia));
+            cbNivelProg.SelectedIndex = -1;
+
+            cbGestorProg.SelectedIndex = -1;
+
+            using (var db = new iTasksContext())
+            {
+                cbGestorProg.Items.AddRange(db.Gestores.ToArray());
+            }
+
+
+
         }
 
         private void lstListaGestores_SelectedIndexChanged(object sender, EventArgs e)
@@ -109,7 +135,6 @@ namespace iTasks
 
             
             btEliminarGestor.Enabled = true;
-
 
         }
 
@@ -233,6 +258,155 @@ namespace iTasks
 
             lstListaGestores.SelectedIndex = -1;
             btEliminarGestor.Enabled = false;
+        }
+
+        private void txtNomeGestor_TextChanged(object sender, EventArgs e)
+        {
+            //VerificarCamposGestor();
+
+        }
+
+        private void txtUsernameGestor_TextChanged(object sender, EventArgs e)
+        {
+            //VerificarCamposGestor();
+        }
+
+        private void txtPasswordGestor_TextChanged(object sender, EventArgs e)
+        {
+            //VerificarCamposGestor();
+        }
+
+        private void cbDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //VerificarCamposGestor();
+        }
+
+
+
+
+
+
+
+
+
+
+        private void lstListaProgramadores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lstListaProgramadores.SelectedIndex == -1)
+            {
+                return;
+            }
+
+            btGravarProg.Text = "Atualizar Programador";
+
+            // OBTER O GESTOR SELECIONADO
+            Programador programador = (Programador)lstListaProgramadores.SelectedItem;
+
+
+            // ATUALIZAR OS CAMPOS COM OS DADOS DO PROGRAMADOR
+            txtIdProg.Text = programador.Id.ToString();
+            txtNomeProg.Text = programador.Nome;
+            txtUsernameProg.Text = programador.Username;
+            txtPasswordProg.Text = programador.Password;
+
+            cbNivelProg.SelectedItem = programador.NivelExperiencia;
+
+            cbGestorProg.SelectedItem = programador.Gestor;
+
+            btEliminarProg.Enabled = true;
+        }
+
+
+        private void btLimparSelecaoProgramadores_Click(object sender, EventArgs e)
+        {
+            LimparCamposProgramador();
+            AtualizarListasProgramador();
+
+            lstListaProgramadores.SelectedIndex = -1;
+            btEliminarGestor.Enabled = false;
+        }
+
+        private void btGravarProg_Click(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrWhiteSpace(txtNomeProg.Text) || string.IsNullOrWhiteSpace(txtUsernameProg.Text) || string.IsNullOrWhiteSpace(txtPasswordProg.Text) || cbNivelProg.SelectedItem == null || cbGestorProg.SelectedItem == null))
+            {
+                // CRIAR PROGRAMADOR
+                if (lstListaProgramadores.SelectedIndex == -1)
+                {
+                    try
+                    {
+                        using (var db = new iTasksContext())
+                        {
+                            // CRIAR O PROGRAMADOR
+                            var programador = new Programador()
+                            {
+                                Nome = txtNomeProg.Text,
+                                Username = txtUsernameProg.Text,
+                                Password = txtPasswordProg.Text,
+                                NivelExperiencia = (NivelExperiencia)cbNivelProg.SelectedItem,
+                                Gestor = (Gestor)cbGestorProg.SelectedItem
+                            };
+                            db.Programadores.Add(programador);
+                            db.SaveChanges();
+
+                            MessageBox.Show("Programador criado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            AtualizarListasProgramador();
+                            LimparCamposProgramador();
+                            
+
+                            btEliminarProg.Enabled = false;
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao criar o programador: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+                // ATUALIZAR PROGRAMADOR
+                else if (lstListaProgramadores.SelectedIndex != -1)
+                {
+                    try
+                    {
+                        using (var db = new iTasksContext())
+                        {
+                            var programador = db.Programadores.Find(int.Parse(txtIdProg.Text));
+
+                            if (programador == null)
+                            {
+                                MessageBox.Show("Programador não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+
+                            // ATUALIZAR O PROGRAMADOR
+                            programador.Nome = txtNomeProg.Text;
+                            programador.Username = txtUsernameProg.Text;
+                            programador.Password = txtPasswordProg.Text;
+                            programador.NivelExperiencia = (NivelExperiencia)cbNivelProg.SelectedItem;
+                            programador.Gestor = (Gestor)cbGestorProg.SelectedItem;
+
+                            db.SaveChanges();
+
+                            MessageBox.Show("Programador atualizado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            AtualizarListasProgramador();
+                            LimparCamposProgramador();
+                            btEliminarProg.Enabled = false;
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao atualizar o programador: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os campos obrigatórios.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
     }
 }

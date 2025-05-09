@@ -1,10 +1,11 @@
-﻿using System;
+﻿using iTasks.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iTasks.Model
+namespace iTasks.Controller
 {
     public static class Sessao
     {

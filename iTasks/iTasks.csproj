@@ -56,11 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\GestorController.cs" />
     <Compile Include="Model\Enum.cs" />
     <Compile Include="Model\Gestor.cs" />
     <Compile Include="Model\iTasksContext.cs" />
     <Compile Include="Model\Programador.cs" />
-    <Compile Include="Model\Sessao.cs" />
+    <Compile Include="Controller\Sessao.cs" />
     <Compile Include="Model\Tarefa.cs" />
     <Compile Include="Model\TipoTarefa.cs" />
     <Compile Include="Model\Utilizador.cs" />
@@ -152,9 +153,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

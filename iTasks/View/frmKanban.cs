@@ -1,4 +1,5 @@
 ﻿using iTasks.Model;
+using iTasks.Controller;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -76,6 +77,12 @@ namespace iTasks
             consultarTarefasEmCurso.Show();
         }
 
+        // CRIAR NOVA TAREFA
+        private void btNova_Click(object sender, EventArgs e)
+        {
+            var detalhesTarefa = new frmDetalhesTarefa();
+            detalhesTarefa.Show();
 
+        }
     }
 }
