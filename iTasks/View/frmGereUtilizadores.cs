@@ -15,10 +15,6 @@ namespace iTasks
 {
     public partial class frmGereUtilizadores : Form
     {
-
-
-
-
         public frmGereUtilizadores()
         {
             InitializeComponent();
@@ -31,7 +27,7 @@ namespace iTasks
         {
             
             lstListaGestores.Items.Clear();
-            lstListaGestores.Items.AddRange(GestorController.ShowAll().ToArray());
+            lstListaGestores.Items.AddRange(GestorController.ToList().ToArray());
             
         }
 
@@ -46,8 +42,6 @@ namespace iTasks
             btGravarGestor.Text = "Criar Gestor";
             lstListaGestores.SelectedIndex = -1;
         }
-
-
 
         private void AtualizarListasProgramador()
         {
@@ -149,28 +143,30 @@ namespace iTasks
                 {
                     try
                     {
-                        using (var db = new iTasksContext())
+                        
+                        // CRIAR O GESTOR
+                        var gestor = new Gestor()
                         {
-                            // CRIAR O GESTOR
-                            var gestor = new Gestor()
-                            {
-                                Nome = txtNomeGestor.Text,
-                                Username = txtUsernameGestor.Text,
-                                Password = txtPasswordGestor.Text,
-                                Departamento = (Departamento)cbDepartamento.SelectedItem,
-                                GereUtilizadores = chkGereUtilizadores.Checked
-                            };
-                            db.Gestores.Add(gestor);
-                            db.SaveChanges();
+                            Nome = txtNomeGestor.Text,
+                            Username = txtUsernameGestor.Text,
+                            Password = txtPasswordGestor.Text,
+                            Departamento = (Departamento)cbDepartamento.SelectedItem,
+                            GereUtilizadores = chkGereUtilizadores.Checked
+                        };
 
-                            MessageBox.Show("Gestor criado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            AtualizarListasGestor();
-                            LimparCamposGestor();
-                            chkGereUtilizadores.Checked = false;
+                        GestorController.Create(gestor);
+                            
+          
+                        AtualizarListasGestor();
 
-                            btEliminarGestor.Enabled = false;
+                        MessageBox.Show("Gestor criado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        }
+                        LimparCamposGestor();
+                        chkGereUtilizadores.Checked = false;
+
+                        btEliminarGestor.Enabled = false;
+
+                        
                     }
                     catch (Exception ex)
                     {
@@ -183,32 +179,36 @@ namespace iTasks
                 {
                     try
                     {
-                        using (var db = new iTasksContext())
+                      
+                        var gestor = GestorController.Find(int.Parse(txtIdGestor.Text));
+
+                        if (gestor == null)
                         {
-                            var gestor = db.Gestores.Find(int.Parse(txtIdGestor.Text));
-
-                            if (gestor == null)
-                            {
-                                MessageBox.Show("Gestor não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                return;
-                            }
-
-                            // ATUALIZAR O GESTOR
-                            gestor.Nome = txtNomeGestor.Text;
-                            gestor.Username = txtUsernameGestor.Text;
-                            gestor.Password = txtPasswordGestor.Text;
-                            gestor.Departamento = (Departamento)cbDepartamento.SelectedItem;
-                            gestor.GereUtilizadores = chkGereUtilizadores.Checked;
-
-                            db.SaveChanges();
-
-                            MessageBox.Show("Gestor atualizado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                            AtualizarListasGestor();
-                            LimparCamposGestor();
-                            btEliminarGestor.Enabled = false;
-
+                            MessageBox.Show("Gestor não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
                         }
+
+                        // OBTER OS DADOS DO GESTOR PELOS CAMPOS
+                        gestor.Nome = txtNomeGestor.Text;
+                        gestor.Username = txtUsernameGestor.Text;
+                        gestor.Password = txtPasswordGestor.Text;
+                        gestor.Departamento = (Departamento)cbDepartamento.SelectedItem;
+                        gestor.GereUtilizadores = chkGereUtilizadores.Checked;
+
+                        // ATUALIZAR O GESTOR
+                        GestorController.Update(gestor);
+
+
+
+                        AtualizarListasGestor();
+
+                        MessageBox.Show("Gestor atualizado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        LimparCamposGestor();
+                        btEliminarGestor.Enabled = false;
+
+
+
                     }
                     catch (Exception ex)
                     {
@@ -229,20 +229,19 @@ namespace iTasks
 
             try
             {
-                using (var db = new iTasksContext())
-                {
-                    // ENCONTRAR O GESTOR
-                    
-                    var gestor = db.Gestores.Find(int.Parse(txtIdGestor.Text));
+                // ENCONTRAR O GESTOR
+                var gestor = GestorController.Find(int.Parse(txtIdGestor.Text));
 
-                    db.Gestores.Remove(gestor);
-                    db.SaveChanges();
+                GestorController.Delete(gestor);
 
-                    MessageBox.Show("Gestor eliminado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    AtualizarListasGestor();
-                    LimparCamposGestor();
-                    btEliminarGestor.Enabled = false;
-                }
+                AtualizarListasGestor();
+
+                MessageBox.Show("Gestor eliminado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                LimparCamposGestor();
+                btEliminarGestor.Enabled = false;
+                
             }
             catch (Exception ex)
             {

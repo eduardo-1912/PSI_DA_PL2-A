@@ -54,6 +54,13 @@ namespace iTasks
             Application.Run(new frmLogin());
         }
 
+        // instanciar um controller
+        // meter private ProductController controller nas views;
+        // public formController
+        // formulários sempre iniciados com o controller
+        // ProductForm formBase = new ProductForm(controller);
+        // Form2 formSecundario = new Form2(controller);
+        // Application.Run(formBase);
 
 
     }
